@@ -1,5 +1,62 @@
-<html>
-  <body>
-    <h1>Disable Disqus</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkbox.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white;
+            font-family: 'Inter', 'Courier New', Courier, monospace;
+        }
+        
+        body {
+            width: max-content;
+            background-color: white;
+            padding: 1rem;
+            background: linear-gradient(220.55deg, #A531DC 0%, #4300B1 100%);
+        }
+        
+        fieldset {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        fieldset .badge {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <!-- Toggle Button Style 1 -->
+        <label class="toggler-wrapper style-1">
+          <input type="checkbox" name="disable">
+          <div class="toggler-slider">
+            <div class="toggler-knob"></div>
+          </div>
+        </label>
+        <!-- End Toggle Button Style 1 -->
+        <div class="badge">Disable Discus?</div>
+    </fieldset>
+
+    <div class="log"></div>
+    <script src="popup.js"></script>
+</body>
+
 </html>
